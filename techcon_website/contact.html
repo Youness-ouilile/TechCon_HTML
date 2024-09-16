@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first project</title>
+    <title>contact</title>
    
 </head>
 <body>
@@ -21,21 +21,32 @@
 
     </header>
     <main>
+    <section>
+        <p>Email Address: <a href="mailto:email@example.com">email@example.com</a></p>
+        <p>Follow us on social media:</p>
+        <div class="social-media">
         <a href="mailto:ouilileyouness@gmail.com" target="_blank">Email Address</a>
         <a href="www.linkedin.com/in/youness-ouilile" target="_blank">linkedin</a>
         <a href="https://github.com/Youness-ouilile" target="_blank">github</a>
-        <iframe src="https://maps.app.goo.gl/imiYJvvBGRm88pMZ6"
-        allowfullscreen="" loading="lazy"></iframe>
-        <form>
-            <input type="text">
-            <labe for="text">Name</label>
-            <input type="email">
-            <label>email</label>
-            
-            <textarea></textarea>
-            <label>Message</label>
-            <button type="submit">Send message</button>
+        </div>
+    </section>
 
+
+    <section>
+        <h2>Contact Us Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
         </form>
       
